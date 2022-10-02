@@ -90,14 +90,14 @@ param vc:
 	
 	
 
-param fc:=
-	Bratislava		16
-	Lvov 			13
-	Krakow 			20
-	Sibiu 			12
-	Kharkiv 		18
-	Pleven 			15
-	Nizhny			17;	
+param fc :=
+	Bratislava		16000
+	Lvov			13000
+	Krakow			20000
+	Sibiu			12000
+	Kharkiv			18000
+	Pleven			15000
+	Nizhny			17000;	
 
 
 
@@ -106,23 +106,32 @@ solve;
 
 display	Ship, Total_Cost, Build; 
 
-# : Bratislava Kharkiv Krakow  Lvov Nizhny Pleven Sibiu    :=
-#A      0          0      0      0     0    200      0
-#B      0        145      0      0     0      0      5
-#C      0        225      0      0     0      0      0
-#D      0          0      0      0   120      0      0
-#E      0          0      0      0   155      0      0
-#F      0        180      0      0     0      0      0
-#G      0          0      0      0     0      0    170
-#H      0        200      0      0     0     30      0
-#I      0          0      0      0     0      0    230
-#J      0          0      0    190     0      0      0
-#K      0          0      0      0     0      0    265
-#L      0          0    300      0     0      0      0
 
-#Total_Cost = 30495
+# Bratislava Kharkiv Krakow  Lvov Nizhny Pleven Sibiu    :=
+#A       0         0     0       0    0     200      0
+#B       0       150     0       0    0       0      0
+#C       0       225     0       0    0       0      0
+#D       0         0     0       0    0     120      0
+#E       0         0     0       0    0       0    155
+#F       0       180     0       0    0       0      0
+#G       0        80     0       0    0       0     90
+#H       0       100     0       0    0     130      0
+#I       0         0     0       0    0       0    230
+#J       0         0     0     190    0       0      0
+#K      70         0     0       0    0       0    195
+#L     300         0     0       0    0       0      0
 
 
+#Total_Cost = 108340
+
+#Build [*] :=
+#Bratislava  1
+#   Kharkiv  1
+ #   Krakow  0
+  #    Lvov  1
+   # Nizhny  0
+    #Pleven  1
+     #Sibiu  1
 
 
 
