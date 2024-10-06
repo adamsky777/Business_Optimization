@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="http://katapult.vc" target="_blank">
+<a href="https://ampl.com" target="_blank">
     <img src="./ampl-logo.png" alt="AMPL_logo" width="370" height="250"/>
 </a>
 
