@@ -5,7 +5,7 @@
 </a>
 
 
-# `Business Optimization Course`
+# `Business Optimization Master's Course`
 
 ![Static Badge](https://img.shields.io/badge/mission-Decision_making_with_optimization-purple)
 <br />
